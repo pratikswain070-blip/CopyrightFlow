@@ -103,7 +103,6 @@ The project is fully client-side. Wallet connection, authentication, purchases, 
 | Vite 8 | Fast local development server and production build tooling. |
 | React Router DOM 6 | Client-side routing between pages. |
 | Tailwind CSS 4 | Utility-first styling and theme customization. |
-| Framer Motion | Page and component animations. |
 | Recharts | Dashboard charts and royalty analytics. |
 | Lucide React | Icon system used across navigation, cards, buttons, and controls. |
 | ESLint | Static analysis and code quality checks. |

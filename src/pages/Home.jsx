@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Navbar } from '../components/layout/Navbar';
 import { Footer } from '../components/layout/Footer';
 import { Button } from '../components/ui/Button';
@@ -25,19 +24,6 @@ import {
 } from 'lucide-react';
 
 export const Home = () => {
-  const containerVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, staggerChildren: 0.15 }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 15 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.4 } }
-  };
 
   // Stats bar data
   const stats = [
@@ -118,34 +104,23 @@ export const Home = () => {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-          className="max-w-4xl flex flex-col items-center gap-6"
-        >
-          <motion.div variants={itemVariants}>
+        <div className="max-w-4xl flex flex-col items-center gap-6">
+          <div className="animate-slide-up">
             <Badge type="purple">Web3 IP Royalty Protocol</Badge>
-          </motion.div>
+          </div>
 
-          <motion.h1
-            variants={itemVariants}
-            className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-50 font-display leading-[1.1]"
-          >
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-50 font-display leading-[1.1] animate-slide-up delay-100">
             Own, Trade and Earn from <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-purple to-slate-400">
               Digital Assets Automatically
             </span>
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            variants={itemVariants}
-            className="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed font-sans"
-          >
+          <p className="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed font-sans animate-slide-up delay-200">
             CopyrightFlow is a decentralized licensing and royalty infrastructure. List artwork, music licenses, and game models. Royalties route directly to creator wallets on every resale.
-          </motion.p>
+          </p>
 
-          <motion.div variants={itemVariants} className="flex flex-wrap gap-4 justify-center mt-2">
+          <div className="flex flex-wrap gap-4 justify-center mt-2 animate-slide-up delay-300">
             <Link to="/marketplace">
               <Button variant="primary" size="large">
                 Explore Marketplace
@@ -156,15 +131,12 @@ export const Home = () => {
                 List Your Asset
               </Button>
             </Link>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         {/* Animated Flow Diagram */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.6, duration: 0.6 }}
-          className="mt-16 w-full max-w-3xl bg-navy-900/60 border border-navy-900 backdrop-blur-md rounded-2xl p-8 relative flex flex-col items-center justify-center overflow-hidden"
+        <div
+          className="mt-16 w-full max-w-3xl bg-navy-900/60 border border-navy-900 backdrop-blur-md rounded-2xl p-8 relative flex flex-col items-center justify-center overflow-hidden animate-scale-up delay-500"
         >
           <div className="absolute top-2 left-4 text-[10px] font-mono font-semibold tracking-wider text-slate-600 uppercase flex items-center gap-1.5">
             <Workflow className="w-3.5 h-3.5 text-primary-purple" />
@@ -248,7 +220,7 @@ export const Home = () => {
               <span className="text-[10px] font-mono text-slate-500">0xE82d...9A3b</span>
             </div>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* Stats Bar */}
