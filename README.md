@@ -373,4 +373,4 @@ This project is intended for educational and prototype use. Add a formal license
 
 ## Live Demo Link
 
-https://copyright-flow-o21ss6ucx-pratik-swains-projects.vercel.app/
+https://copyright-flow.vercel.app/
