@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #ffffff; /* Adobe pure white canvas background */
+  --color-navy-900: #f9f9f9; /* Soft gray for cards and panel backgrounds */
+  --color-navy-850: #ffffff; /* White headers */
+  --color-navy-800: #e1e1e1; /* Subtle border color */
+  --color-navy-750: #d5d5d5; /* Hover border highlights */
+  --color-navy-700: #b9b9b9; /* Active border / inputs focus */
+  --color-navy-600: #8a8a8a; /* Secondary dividers */
+
+  --color-primary-purple: #eb1000; /* Adobe brand red */
+  --color-primary-purple-hover: #c40d00; /* Darker red hover */
+  
+  --color-teal-green: #2d9d78; /* Adobe green success accents */
+  --color-teal-green-hover: #1e6e53;
+  
+  --color-amber-orange: #f58220; /* Creative Cloud Orange */
+  --color-amber-orange-hover: #cf6910;
+  
+  --color-soft-red: #d7373f; /* Adobe error red */
+  --color-soft-red-hover: #b52129;
+
+  --color-slate-50: #000000;  /* Pure black headings */
+  --color-slate-100: #111111;
+  --color-slate-200: #222222;
+  --color-slate-300: #2c2c2c;  /* Main text charcoal */
+  --color-slate-400: #4b4b4b;  /* Subtle body text */
+  --color-slate-450: #555555;
+  --color-slate-500: #747474;
+  --color-slate-600: #a2a2a2;
+  --color-slate-700: #d3d3d3;
+  --color-slate-800: #f3f3f3;
+  --color-slate-900: #f9f9f9;
+  --color-slate-950: #ffffff;
+
+  --font-sans: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Adobe Clean", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-navy-950);
+    color: var(--color-slate-300);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-slate-50);
+  }
+
+  code, pre, .mono {
+    font-family: var(--font-mono);
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-navy-950);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-navy-800);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-navy-700);
+  }
+}
+
+@layer utilities {
+  /* Purple glow effects */
+  .glow-purple {
+    box-shadow: 0 0 15px rgba(235, 16, 0, 0.08);
+  }
+  .hover-glow-purple:hover {
+    box-shadow: 0 0 20px rgba(235, 16, 0, 0.15);
+  }
+
+  /* Flow chart animation */
+  @keyframes dash {
+    to {
+      stroke-dashoffset: -20;
+    }
+  }
+
+  .animate-dash {
+    stroke-dasharray: 5, 5;
+    animation: dash 1s linear infinite;
+  }
+
+  @keyframes float-back {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+  }
+
+  .animate-royalty-flow {
+    animation: float-back 3s linear infinite;
+  }
+  
+  /* Background gradients */
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(235, 16, 0, 0.01) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(235, 16, 0, 0.01) 1px, transparent 1px);
+  }
+}
