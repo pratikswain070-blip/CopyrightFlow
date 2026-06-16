@@ -158,5 +158,161 @@ export const assets = [
       { date: "2026-06-05", from: "0x2E4b...9C1d", to: "0x7F3a...C4D1", price: 45, status: "success" }
     ],
     fileName: "retro_ui_kit_v2.otf"
-  }
+  },
+  {
+  id: 7,
+  name: "Fantasy Forest Environment Pack",
+  category: "Game Asset",
+  creator: {
+    name: "NatureForge",
+    wallet: "0xA3B5...8F1D",
+    verified: true,
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  priceUSD: 180,
+  priceETH: 0.067,
+  licenseType: "Commercial",
+  tradeVolume: 76,
+  status: "Available",
+  description: "A complete fantasy forest asset pack featuring trees, bushes, rocks, mushrooms, animated waterfalls, and environmental effects for RPG and adventure games.",
+  royaltySplits: {
+    creator: 12,
+    platform: 2,
+    prevOwner: 1
+  },
+  history: [
+    { date: "2026-06-08", from: "0xA3B5...8F1D", to: "0x7F3a...C4D1", price: 180, status: "success" }
+  ],
+  fileName: "fantasy_forest_pack.zip"
+},
+{
+  id: 8,
+  name: "Sci-Fi Spaceship Collection",
+  category: "Game Asset",
+  creator: {
+    name: "GalaxyWorks",
+    wallet: "0xB8D2...4E7F",
+    verified: true,
+    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  priceUSD: 420,
+  priceETH: 0.155,
+  licenseType: "Exclusive",
+  tradeVolume: 58,
+  status: "Auction",
+  description: "High-quality 3D spaceship models including fighters, cargo ships, cruisers, and capital ships optimized for Unreal Engine and Unity.",
+  royaltySplits: {
+    creator: 15,
+    platform: 3,
+    prevOwner: 2
+  },
+  history: [
+    { date: "2026-05-30", from: "0xB8D2...4E7F", to: "0x7F3a...C4D1", price: 390, status: "success" }
+  ],
+  fileName: "spaceship_collection.zip"
+},
+{
+  id: 9,
+  name: "Dungeon Tileset Ultimate",
+  category: "Game Asset",
+  creator: {
+    name: "TileMasters",
+    wallet: "0xD4F7...2A9C",
+    verified: true,
+    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  priceUSD: 95,
+  priceETH: 0.036,
+  licenseType: "Commercial",
+  tradeVolume: 103,
+  status: "Available",
+  description: "A modular dungeon-building kit with walls, floors, traps, doors, treasures, and decorative props for top-down and isometric games.",
+  royaltySplits: {
+    creator: 10,
+    platform: 2,
+    prevOwner: 2
+  },
+  history: [
+    { date: "2026-06-02", from: "0xD4F7...2A9C", to: "0x7F3a...C4D1", price: 95, status: "success" }
+  ],
+  fileName: "dungeon_tileset.zip"
+},
+{
+  id: 10,
+  name: "Cyberpunk Street Illustration",
+  category: "Artwork",
+  creator: {
+    name: "NeoCanvas",
+    wallet: "0xC6A1...7B3D",
+    verified: true,
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  priceUSD: 275,
+  priceETH: 0.102,
+  licenseType: "Commercial",
+  tradeVolume: 39,
+  status: "Available",
+  description: "Ultra-detailed digital artwork depicting a rainy neon-lit cyberpunk street with dynamic lighting and futuristic architecture.",
+  royaltySplits: {
+    creator: 8,
+    platform: 2,
+    prevOwner: 1
+  },
+  history: [
+    { date: "2026-05-22", from: "0xC6A1...7B3D", to: "0x7F3a...C4D1", price: 275, status: "success" }
+  ],
+  fileName: "cyberpunk_street.png"
+},
+{
+  id: 11,
+  name: "Ancient Kingdom Concept Art",
+  category: "Artwork",
+  creator: {
+    name: "MythicArts",
+    wallet: "0xE1D8...6F4B",
+    verified: false,
+    avatar: "https://images.unsplash.com/photo-1542204625-de293a2f8ff8?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  priceUSD: 310,
+  priceETH: 0.115,
+  licenseType: "Commercial",
+  tradeVolume: 51,
+  status: "Available",
+  description: "Epic fantasy concept art showcasing a sprawling ancient kingdom with castles, mountains, rivers, and cinematic atmospheric effects.",
+  royaltySplits: {
+    creator: 9,
+    platform: 2,
+    prevOwner: 0
+  },
+  history: [
+    { date: "2026-05-15", from: "0xE1D8...6F4B", to: "0x7F3a...C4D1", price: 310, status: "success" }
+  ],
+  fileName: "ancient_kingdom_art.png"
+},
+{
+  id: 12,
+  name: "Ocean Dreams Digital Painting",
+  category: "Artwork",
+  creator: {
+    name: "BlueWave Studio",
+    wallet: "0xF2A9...5D8E",
+    verified: true,
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150&q=80"
+  },
+  priceUSD: 195,
+  priceETH: 0.072,
+  licenseType: "Personal Use",
+  tradeVolume: 28,
+  status: "Available",
+  description: "A breathtaking digital painting featuring bioluminescent sea creatures and dreamy underwater landscapes rendered in vibrant colors.",
+  royaltySplits: {
+    creator: 7,
+    platform: 2,
+    prevOwner: 1
+  },
+  history: [
+    { date: "2026-06-04", from: "0xF2A9...5D8E", to: "0x7F3a...C4D1", price: 195, status: "success" }
+  ],
+  fileName: "ocean_dreams_artwork.png"
+}
 ];
