@@ -52,7 +52,12 @@ export const AppProvider = ({ children }) => {
     }
     return loaded;
   });
-  const [assets, setAssets] = useState(() => load('assets', initialAssets));
+  const [assets, setAssets] = useState(() => {
+    const cached = load('assets', null);
+    if (!cached) return initialAssets;
+    const newAssets = initialAssets.filter(ia => !cached.some(ca => ca.id === ia.id));
+    return [...cached, ...newAssets];
+  });
   const [auctions, setAuctions] = useState(initialAuctions);
   const [dashboard, setDashboard] = useState(() => {
     const loaded = load('dashboard', initialDashboard);
